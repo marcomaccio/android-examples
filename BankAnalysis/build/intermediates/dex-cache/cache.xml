@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/marcomaccio/Documents/Development/tools/google/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/Users/marcomaccio/Documents/Development/tools/google/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-cdc09d9675b2e66d4d322c4662a8fea3565a25f7.jar" />
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/examples/android-examples/BankAnalysis/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-e78e342e85029d8322360912b119c3f8fd88547c.jar" />
+    </item>
+    <item
+        jar="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/pre-dexed/debug/classes-7a8f238e2b7b94cf9764a873757c1c4fb183de50.jar" />
+    </item>
+    <item
+        jar="/Users/marcomaccio/Documents/Development/sourceCode/android/examples/android-examples/BankAnalysis/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/examples/android-examples/BankAnalysis/app/build/intermediates/pre-dexed/debug/classes-6c4c31021e068fa59019c34363e47b11e9e714a3.jar" />
+    </item>
+    <item
+        jar="/Users/marcomaccio/Documents/Development/sourceCode/android/examples/android-examples/BankAnalysis/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/examples/android-examples/BankAnalysis/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-a69a5adee03c2f9cb6394b279a91d883717cce68.jar" />
     </item>
     <item
         jar="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
@@ -16,11 +37,11 @@
         <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-4363c5d44e0baa3c0518801caea68c16c1abcbc2.jar" />
     </item>
     <item
-        jar="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jar="/Users/marcomaccio/Documents/Development/tools/google/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/pre-dexed/debug/classes-7a8f238e2b7b94cf9764a873757c1c4fb183de50.jar" />
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/marcomaccio/Documents/Development/sourceCode/android/projects/BankAnalysis/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-cdc09d9675b2e66d4d322c4662a8fea3565a25f7.jar" />
     </item>
 
 </items>

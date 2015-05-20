@@ -1,2 +1,22 @@
+# IDE working files
+*.iws
+*.ipr
+*.iml
+.idea/
+.settings
+.project
+.classpath
 
+#Gradle dir
+.gradle/
+
+#Android local files
 BankAnalysis/local.properties
+
+# Build directories
+distrib/
+target/
+build/
+
+# OS generated files
+.DS_Store*
