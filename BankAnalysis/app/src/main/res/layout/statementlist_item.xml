@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statementListItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >    
+
+    <TextView
+        android:id="@+id/operationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:text="@string/dateOperation"
+        android:textSize="18sp" />
+
+	<TextView 
+		android:id="@+id/valueDate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:textSize="18sp"
+		android:layout_toRightOf="@+id/operationDate"
+		android:layout_toEndOf="@+id/operationDate"
+		android:text="@string/dateValue" />
+
+</RelativeLayout>

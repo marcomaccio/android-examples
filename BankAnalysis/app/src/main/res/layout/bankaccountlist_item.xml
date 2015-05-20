@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bankAccountListItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bankLogoImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/bankLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bank_logo" />
+
+    <TextView
+        android:id="@+id/bankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bankLogoImageView"
+        android:layout_toEndOf="@+id/bankLogoImageView"
+        android:ems="10"
+        android:text="@string/bankName" />
+
+	<TextView
+	    android:id="@+id/iban"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentStart="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentEnd="true"
+	    android:layout_below="@+id/bankLogoImageView"
+	    android:ems="10"
+	    android:text="@string/accountIban" />
+
+	<TextView
+	    android:id="@+id/bankAddress"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/bankName"
+	    android:layout_alignStart="@+id/bankName"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentEnd="true"
+	    android:layout_below="@+id/bankName"
+	    android:ems="10"
+	    android:text="@string/bankAddress" />
+
+	<TextView
+	    android:id="@+id/bankCountry"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/bankAddress"
+	    android:layout_alignStart="@+id/bankAddress"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentEnd="true"
+	    android:layout_below="@+id/bankAddress"
+	    android:ems="10"
+	    android:text="@string/bankCountry" />
+
+</RelativeLayout>
