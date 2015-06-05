@@ -1,8 +1,8 @@
-package name.marmac.tutorials.android.contentproviders.bankanalysis.activities;
+package name.marmac.tutorials.android.bankaccountanalyzer.activities;
 
 
-import name.marmac.tutorials.android.contentproviders.bankanalysis.adapters.BankAccountCursorAdapter;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.providers.BankAnalysisContract;
+import name.marmac.tutorials.android.bankaccountanalyzer.adapters.BankAccountCursorAdapter;
+import name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContract;
 import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
 import android.app.ListActivity;
 import android.content.ContentResolver;
@@ -13,7 +13,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class BankAnalysisContactProviderDemoActivity extends ListActivity {

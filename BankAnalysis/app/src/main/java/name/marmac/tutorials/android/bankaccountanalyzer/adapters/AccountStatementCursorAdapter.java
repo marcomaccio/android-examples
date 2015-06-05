@@ -1,7 +1,7 @@
-package name.marmac.tutorials.android.contentproviders.bankanalysis.adapters;
+package name.marmac.tutorials.android.bankaccountanalyzer.adapters;
 
 import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.providers.BankAnalysisContract;
+import name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContract;
 import android.content.Context;
 import android.database.Cursor;
 import android.view.LayoutInflater;

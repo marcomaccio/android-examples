@@ -1,8 +1,8 @@
-package name.marmac.tutorials.android.contentproviders.bankanalysis.fragments;
+package name.marmac.tutorials.android.bankaccountanalyzer.fragments;
 
 import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.adapters.AccountStatementCursorAdapter;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.providers.BankAnalysisContract;
+import name.marmac.tutorials.android.bankaccountanalyzer.adapters.AccountStatementCursorAdapter;
+import name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContract;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.database.Cursor;
@@ -10,9 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;

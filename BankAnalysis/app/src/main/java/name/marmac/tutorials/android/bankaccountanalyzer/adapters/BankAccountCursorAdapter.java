@@ -1,16 +1,13 @@
-package name.marmac.tutorials.android.contentproviders.bankanalysis.adapters;
+package name.marmac.tutorials.android.bankaccountanalyzer.adapters;
 
 import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.providers.BankAnalysisContract;
+import name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContract;
 import android.content.Context;
 import android.database.Cursor;
 import android.support.v4.widget.ResourceCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.CursorAdapter;
-import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 public class BankAccountCursorAdapter extends ResourceCursorAdapter {

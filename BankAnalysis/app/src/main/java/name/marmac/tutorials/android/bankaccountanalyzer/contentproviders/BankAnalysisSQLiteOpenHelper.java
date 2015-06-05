@@ -1,7 +1,7 @@
 /**
  * 
  */
-package name.marmac.tutorials.android.contentproviders.bankanalysis.providers;
+package name.marmac.tutorials.android.bankaccountanalyzer.contentproviders;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

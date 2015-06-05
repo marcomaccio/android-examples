@@ -1,12 +1,12 @@
-package name.marmac.tutorials.android.contentproviders.bankanalysis.activities;
+package name.marmac.tutorials.android.bankaccountanalyzer.activities;
 
 
 import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.fragments.AccountStatementListFragment;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.fragments.BankAccountListFragment;
+import name.marmac.tutorials.android.bankaccountanalyzer.fragments.AccountStatementListFragment;
+import name.marmac.tutorials.android.bankaccountanalyzer.fragments.BankAccountListFragment;
 
 public class BankManagerMainActivity extends FragmentActivity 
 			implements BankAccountListFragment.OnBankAccountSelectedListener {

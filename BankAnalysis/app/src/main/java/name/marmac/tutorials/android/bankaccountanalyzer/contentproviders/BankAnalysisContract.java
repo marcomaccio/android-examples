@@ -1,4 +1,4 @@
-package name.marmac.tutorials.android.contentproviders.bankanalysis.providers;
+package name.marmac.tutorials.android.bankaccountanalyzer.contentproviders;
 
 import android.content.ContentResolver;
 import android.net.Uri;

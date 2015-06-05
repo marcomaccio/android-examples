@@ -42,7 +42,7 @@
         android:label="@string/app_name" >
         
         <activity
-            android:name="name.marmac.tutorials.android.contentproviders.bankanalysis.activities.BankManagerMainActivity"
+            android:name="name.marmac.tutorials.android.bankaccountanalyzer.activities.BankManagerMainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,7 +57,7 @@
         	- the enforcement of the permission declared in the permission section.
          -->
         <provider
-            android:name			="name.marmac.tutorials.android.contentproviders.bankanalysis.providers.BankAnalysisContentProvider"
+            android:name			="name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContentProvider"
             android:authorities		="name.marmac.tutorials.android.contentproviders.bankanalysis.provider"
             android:exported		="true"
             android:grantUriPermissions	="true"

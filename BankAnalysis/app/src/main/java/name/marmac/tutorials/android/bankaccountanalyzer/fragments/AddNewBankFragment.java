@@ -1,7 +1,7 @@
 /**
  * 
  */
-package name.marmac.tutorials.android.contentproviders.bankanalysis.fragments;
+package name.marmac.tutorials.android.bankaccountanalyzer.fragments;
 
 import android.app.Fragment;
 

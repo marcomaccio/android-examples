@@ -1,8 +1,8 @@
-package name.marmac.tutorials.android.contentproviders.bankanalysis.fragments;
+package name.marmac.tutorials.android.bankaccountanalyzer.fragments;
 
 import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.adapters.BankAccountCursorAdapter;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.providers.BankAnalysisContract;
+import name.marmac.tutorials.android.bankaccountanalyzer.adapters.BankAccountCursorAdapter;
+import name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContract;
 import android.support.v4.app.ListFragment;
 import android.app.Activity;
 //import android.app.ListFragment;

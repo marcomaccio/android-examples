@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/bankaccount_fragment"
-        android:name="name.marmac.tutorials.android.contentproviders.bankanalysis.fragments.BankAccountListFragment"
+        android:name="name.marmac.tutorials.android.bankaccountanalyzer.fragments.BankAccountListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/accountstatementlist_fragment"
-        android:name="name.marmac.tutorials.android.contentproviders.bankanalysis.fragments.AccountStatementListFragment"
+        android:name="name.marmac.tutorials.android.bankaccountanalyzer.fragments.AccountStatementListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="2" />
