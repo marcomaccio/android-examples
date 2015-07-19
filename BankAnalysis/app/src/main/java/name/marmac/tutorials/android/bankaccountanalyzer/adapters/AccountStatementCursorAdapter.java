@@ -49,7 +49,7 @@ public class AccountStatementCursorAdapter extends ResourceCursorAdapter {
 		TextView operationDate = (TextView)view.findViewById(R.id.operationDate);
 		operationDate.setText(cursor.getString(cursor.getColumnIndex(BankAnalysisContract.Statements.Cols.S_EXECDATE)));
 
-		TextView valueDate = (TextView)view.findViewById(R.id.operationDate);
+		TextView valueDate = (TextView)view.findViewById(R.id.valueDate);
 		valueDate.setText(cursor.getString(cursor.getColumnIndex(BankAnalysisContract.Statements.Cols.S_VALUEDATE)));
 	}
 

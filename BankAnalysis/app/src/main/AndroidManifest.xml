@@ -21,7 +21,7 @@
 
     <uses-sdk 
 		android:minSdkVersion="14" 
-		android:targetSdkVersion="21" />
+		android:targetSdkVersion="22" />
 
     <!-- Define the permission to use the ContentProvider in Read or Write -->
     <permission
