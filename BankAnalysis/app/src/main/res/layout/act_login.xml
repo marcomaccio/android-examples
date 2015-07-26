@@ -3,7 +3,6 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#000000"
     android:paddingLeft="17dp"
     android:paddingRight="17dp"
     android:weightSum="1">
@@ -16,13 +15,13 @@
         android:padding="10dp"
         android:layout_weight="0.31"
         android:layout_gravity="center_horizontal"
-        android:contentDescription="MM BankAnalizer Logo" />
+        android:contentDescription="@string/MM_BankAnalyzer_Logo" />
 
     <EditText android:id="@+id/accountName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Email address"
+        android:hint="@string/EMail_address"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         />
@@ -32,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:inputType="textPassword"
-        android:hint="Password"
+        android:hint="@string/Password"
         android:padding="10dp"
         />
 
@@ -40,14 +39,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Sign in"
+        android:text="@string/SignIn"
         android:padding="10dp"/>
 
     <TextView android:id="@+id/signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="New user?"
+        android:text="@string/SignUp"
         android:padding="10dp"/>
 
 </LinearLayout>

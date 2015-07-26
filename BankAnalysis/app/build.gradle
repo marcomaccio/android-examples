@@ -6,8 +6,9 @@ android {
 
     defaultConfig {
         applicationId "name.marmac.tutorials.android.contentproviders.bankanalysis"
-        minSdkVersion 14
+        minSdkVersion 17
         targetSdkVersion 22
+
     }
 
     buildTypes {

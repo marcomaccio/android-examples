@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MyBankApp</string>
-    
+
+    <!-- Login Activity string values -->
+    <string name="MM_BankAnalyzer_Logo">MM BankAnalyzer Logo</string>
+    <string name="EMail_address">Email Address</string>
+    <string name="Password">Password</string>
+    <string name="SignIn">Sign In</string>
+    <string name="SignUp">New User ?</string>
+
     <!-- Permissions string values -->
     <string name="descr_permission_provider_READ">Allows an app to read your Bank Account Statements</string>
     <string name="descr_permission_provider_WRITE">Allows an app to add or modify existing Bank Account Statements</string>

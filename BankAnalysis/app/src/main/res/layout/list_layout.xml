@@ -49,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bankAddress"
+        android:layout_toEndOf="@+id/idBank"
         android:layout_toRightOf="@+id/idBank"
         android:text="@string/bankName"
         android:textSize="24sp" />
