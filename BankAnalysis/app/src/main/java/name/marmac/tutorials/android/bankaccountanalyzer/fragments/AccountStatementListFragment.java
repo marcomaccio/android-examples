@@ -9,6 +9,9 @@ import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.CursorLoader;
+import android.support.v4.content.Loader;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
@@ -21,12 +24,15 @@ import android.widget.Toast;
  * @author marcomaccio
  *
  */
-public class AccountStatementListFragment extends ListFragment {
+public class AccountStatementListFragment extends ListFragment
+        implements LoaderManager.LoaderCallbacks<Cursor> {
 	
 	private static final String TAG = "BankAnalysis";
 
 	public final static String ARG_POSITION = "position";
     long mCurrentId = -1;
+
+    AccountStatementCursorAdapter mCursorAdapter;
     
     /**
      * 
@@ -37,26 +43,7 @@ public class AccountStatementListFragment extends ListFragment {
         // We need to use a different list item layout for devices older than Honeycomb
         int layout = Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB ?
                 android.R.layout.simple_list_item_activated_1 : android.R.layout.simple_list_item_1;
-        
-        // Access the ContentResolver
-        // Instantiate the ContentResolver in order to operate the CRUD operations
-  		ContentResolver contentResolver = getActivity().getContentResolver();
 
-  		// CRUD Methods: Retrieve DEMO code
-  		//Create the cursor to retrieve the data from the ContentProvider
-  		Cursor statementCursor = contentResolver.query(BankAnalysisContract.Statements.CONTENT_URI, 
-  											null, 		//projection 
-  											null, 		//selection 
-  											null, 		//selectionArgs 
-  											null 		//sortOrder
-  											);
-  		
-  		AccountStatementCursorAdapter cursorAdapter = new AccountStatementCursorAdapter(getActivity(), 
-  															R.layout.list_layout, 
-  															statementCursor, 
-  															0);
-  		
-  		setListAdapter(cursorAdapter);
     }
     
     /**
@@ -87,6 +74,33 @@ public class AccountStatementListFragment extends ListFragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
+
+        // Access the ContentResolver
+        // Instantiate the ContentResolver in order to operate the CRUD operations
+        ContentResolver contentResolver = getActivity().getContentResolver();
+
+        // CRUD Methods: Retrieve DEMO code
+        //Create the cursor to retrieve the data from the ContentProvider
+        Cursor statementCursor = contentResolver.query(BankAnalysisContract.Statements.CONTENT_URI,
+                null, 		//projection
+                null, 		//selection
+                null, 		//selectionArgs
+                null 		//sortOrder
+        );
+
+        mCursorAdapter = new AccountStatementCursorAdapter(getActivity(),
+                R.layout.list_layout,
+                statementCursor,
+                0);
+
+        setListAdapter(mCursorAdapter);
+
+        // Start out with a progress indicator.
+        setListShown(false);
+
+        // Prepare the loader.  Either re-connect with an existing one,
+        // or start a new one.
+        getLoaderManager().initLoader(0, null, this);
 	}
     
     /**
@@ -110,10 +124,10 @@ public class AccountStatementListFragment extends ListFragment {
     	// Inflate the layout for this fragment
         //return inflater.inflate(R.layout.accountstatementlist_fragment, container, false);
     //}
-    
+
     /**
-     * 
-     * @param position
+     *
+     * @param itemId
      */
     public void updateStatementView(long itemId) {
     	//retrieve the TextView
@@ -149,5 +163,44 @@ public class AccountStatementListFragment extends ListFragment {
 
         // Save the current article selection in case we need to recreate the fragment
         outState.putLong(ARG_POSITION, mCurrentId);
+    }
+
+    /**
+     *
+     * @param id
+     * @param args
+     * @return
+     */
+    @Override
+    public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+
+
+        return new CursorLoader(getActivity(),
+                BankAnalysisContract.Statements.CONTENT_URI,
+                null, 		//projection
+                null, 		//selection
+                null, 		//selectionArgs
+                null 		//sortOrder
+                );
+    }
+
+    @Override
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        mCursorAdapter.swapCursor(data);
+
+        // The list should now be shown.
+        if (isResumed()) {
+            setListShown(true);
+        } else {
+            setListShownNoAnimation(true);
+        }
+    }
+
+    @Override
+    public void onLoaderReset(Loader<Cursor> loader) {
+        // This is called when the last Cursor provided to onLoadFinished()
+        // above is about to be closed.  We need to make sure we are no
+        // longer using it.
+        mCursorAdapter.swapCursor(null);
     }
 }
