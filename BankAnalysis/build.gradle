@@ -3,7 +3,6 @@ buildscript {
     repositories {
         jcenter()
         maven {
-            //url "https://plugins.gradle.org/m2/"
             url "http://repo.maccio-ch.homelinux.net/nexus/content/groups/public"
         }
     }
@@ -21,16 +20,12 @@ plugins {
 
 allprojects {
     repositories {
-        //jcenter()
         maven {
             url "http://repo.maccio-ch.homelinux.net/nexus/content/groups/public"
         }
     }
-
-
 }
 
-//apply plugin: "sonar-runner"
 
 sonarqube {
     properties {
