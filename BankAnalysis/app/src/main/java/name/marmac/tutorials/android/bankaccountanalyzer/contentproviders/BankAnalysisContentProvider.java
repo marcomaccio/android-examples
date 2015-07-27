@@ -115,11 +115,14 @@ public class BankAnalysisContentProvider extends ContentProvider {
 			default:
 				throw new IllegalArgumentException("Unsupported URI: " + uri);
 		}
-		
-		Cursor cursor = builder.query(db, projection, selection, selectionArgs,
-				null, null, sortOrder);
-		
-		return cursor;
+
+		return builder.query(db,
+				projection,
+				selection,
+				selectionArgs,
+				null,
+				null,
+				sortOrder);
 	}
 
 	/**
