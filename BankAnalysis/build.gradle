@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
-        jcenter()
+        //jcenter()
         maven {
             url "http://repo.maccio-ch.homelinux.net/nexus/content/groups/public"
         }
@@ -34,7 +34,7 @@ sonarqube {
         property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
         property "sonar.profile", "Android Lint"
         property "sonar.projectName", "BankAnalyzer"
-        property "sonar.projectKey", "name.marmac.tutorials.android:BankAnalyzer"
+        property "sonar.projectKey", "name.marmac.tutorials.android.BankAnalyzer:BankAnalyzer"
         property "sonar.projectVersion", "1.0.0-SNAPSHOT"
         property "sonar.language", "java"
         property "sonar.sources", "src"
@@ -48,6 +48,30 @@ subprojects {
         properties {
             property "sonar.sourceEncoding", "UTF-8"
             property "sonar.sources", "src/main"
+        }
+    }
+}
+
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository ( url: "http://repo.maccio-ch.homelinux.net/nexus/content/repositories/releases/") {
+                authentication (userName: repoUploadUser,
+                                password: repoUploadPassword)
+            }
+            snapshotRepository ( url: "http://repo.maccio-ch.homelinux.net/nexus/content/repositories/snapshots/") {
+                authentication (userName: repoUploadUser,
+                                password: repoUploadPassword)
+            }
+
+            pom.groupId     = "name.marmac.tutorials.android.BankAnalyzer"
+            pom.artifactId  = "BankAnalyser"
+            pom.version     = "1.0.0-SNAPSHOT"
+            pom.packaging   = "apk"
+            pom.name        = "BANK-ANALYSER"
+
         }
     }
 }
