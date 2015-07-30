@@ -66,9 +66,37 @@ uploadArchives {
                                 password: repoUploadPassword)
             }
 
+            pom.project {
+
+                groupId     = "name.marmac.tutorials.android.BankAnalyzer"
+                artifactId  = "BankAnalyser"
+                version     = projectVersion
+                packaging   = "pom"
+                name        = "BANK-ANALYSER"
+
+                developers {
+                    developer {
+                        id      'marco.maccio@marmac.name'
+                        name    'Marco Maccio'
+                        email   'marco.maccio@marmac.name'
+                        roles {
+                            role 'Architect'
+                            role 'Developer'
+                        }
+                    }
+                }
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        distribution 'repo'
+                    }
+                }
+            }
             pom.groupId     = "name.marmac.tutorials.android.BankAnalyzer"
             pom.artifactId  = "BankAnalyser"
-            pom.version     = "1.0.0-SNAPSHOT"
+            pom.version     = projectVersion
             pom.packaging   = "apk"
             pom.name        = "BANK-ANALYSER"
 

@@ -27,4 +27,30 @@ dependencies {
     compile 'com.android.support:support-v4:22.1.1'
 }
 
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://repo.maccio-ch.homelinux.net/nexus/content/repositories/releases/") {
+                authentication(userName: repoUploadUser,
+                                password: repoUploadPassword)
+            }
+            snapshotRepository(url: "http://repo.maccio-ch.homelinux.net/nexus/content/repositories/snapshots/") {
+                authentication(userName: repoUploadUser,
+                                password: repoUploadPassword)
+            }
+
+            pom.project {
+
+                groupId = "name.marmac.tutorials.android.BankAnalyzer"
+                artifactId = "BankAnalyser-app"
+                version = projectVersion
+                packaging = "apk"
+                name = "BANK-ANALYSER :: APP"
+            }
+        }
+    }
+}
+
 
