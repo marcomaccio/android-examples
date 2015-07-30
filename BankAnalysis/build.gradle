@@ -33,8 +33,8 @@ sonarqube {
         property "sonar.jdbc.url", "jdbc:mysql://192.168.10.15:3306/sonarqube?useUnicode=true"
         property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
         property "sonar.profile", "Android Lint"
-        property "sonar.projectName", "BankAnalyzer"
-        property "sonar.projectKey", "name.marmac.tutorials.android.BankAnalyzer:BankAnalyzer"
+        property "sonar.projectName", "Bank-Analyser"
+        property "sonar.projectKey", "name.marmac.tutorials.android.BankAnalyser:BankAnalyser"
         property "sonar.projectVersion", "1.0.0-SNAPSHOT"
         property "sonar.language", "java"
         property "sonar.sources", "src"
@@ -68,7 +68,7 @@ uploadArchives {
 
             pom.project {
 
-                groupId     = "name.marmac.tutorials.android.BankAnalyzer"
+                groupId     = "name.marmac.tutorials.android.BankAnalyser"
                 artifactId  = "BankAnalyser"
                 version     = projectVersion
                 packaging   = "pom"
