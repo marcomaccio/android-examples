@@ -43,11 +43,11 @@ uploadArchives {
 
             pom.project {
 
-                groupId = "name.marmac.tutorials.android.BankAnalyzer"
-                artifactId = "BankAnalyser-app"
-                version = projectVersion
-                packaging = "apk"
-                name = "BANK-ANALYSER :: APP"
+                groupId     = "name.marmac.tutorials.android.BankAnalyzer"
+                artifactId  = "BankAnalyser-app"
+                version     = projectVersion
+                packaging   = "apk"
+                name        = "BANK-ANALYSER :: APP"
             }
         }
     }
