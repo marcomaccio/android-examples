@@ -94,11 +94,7 @@ uploadArchives {
                     }
                 }
             }
-            pom.groupId     = "name.marmac.tutorials.android.BankAnalyzer"
-            pom.artifactId  = "BankAnalyser"
-            pom.version     = projectVersion
-            pom.packaging   = "apk"
-            pom.name        = "BANK-ANALYSER"
+
 
         }
     }
