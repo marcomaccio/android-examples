@@ -3,7 +3,7 @@ package name.marmac.tutorials.android.bankaccountanalyzer.activities;
 
 import name.marmac.tutorials.android.bankaccountanalyzer.adapters.BankAccountCursorAdapter;
 import name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContract;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
+import name.marmac.tutorials.android.bankaccountanalyzer.R;
 import android.app.ListActivity;
 import android.content.ContentResolver;
 import android.content.ContentValues;

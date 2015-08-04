@@ -1,6 +1,6 @@
 package name.marmac.tutorials.android.bankaccountanalyzer.fragments;
 
-import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
+import name.marmac.tutorials.android.bankaccountanalyzer.R;
 import name.marmac.tutorials.android.bankaccountanalyzer.adapters.AccountStatementCursorAdapter;
 import name.marmac.tutorials.android.bankaccountanalyzer.contentproviders.BankAnalysisContract;
 import android.app.Activity;

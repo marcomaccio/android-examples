@@ -1,7 +1,7 @@
 package name.marmac.tutorials.android.bankaccountanalyzer.activities;
 
 
-import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
+import name.marmac.tutorials.android.bankaccountanalyzer.R;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;

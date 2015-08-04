@@ -8,13 +8,13 @@ import android.os.IBinder;
 /**
  * Created by marcomaccio on 04/06/2015.
  */
-public class AuthenticatorService extends Service {
+public class MarmacAuthenticatorService extends Service {
 
-    private Authenticator authenticator;
+    private MarmacAuthenticator authenticator;
 
     @Override
     public void onCreate() {
-        authenticator = new Authenticator(this);
+        authenticator = new MarmacAuthenticator(this);
     }
 
     /*

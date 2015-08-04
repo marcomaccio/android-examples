@@ -10,6 +10,8 @@ public class ServerAuthenticateImplParseCom implements ServerAuthenticateInterfa
                              String email,
                              String pass,
                              String authType) throws Exception {
+
+        //TODO: Implement here the logic to SignUp
         return null;
     }
 
@@ -17,6 +19,8 @@ public class ServerAuthenticateImplParseCom implements ServerAuthenticateInterfa
     public String userSignIn(String user,
                              String pass,
                              String authType) throws Exception {
+
+        //TODO: Implement here the logic to SignIn
         return null;
     }
 }
