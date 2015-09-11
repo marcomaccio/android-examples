@@ -3,7 +3,7 @@ buildscript {
     repositories {
         //jcenter()
         maven {
-            url "http://repo.maccio-ch.homelinux.net/nexus/content/groups/public"
+            url "http://rms.maccio-ch.homelinux.net/nexus/content/groups/mm-m2-public/"
         }
     }
     dependencies {
@@ -21,7 +21,7 @@ plugins {
 allprojects {
     repositories {
         maven {
-            url "http://repo.maccio-ch.homelinux.net/nexus/content/groups/public"
+            url "http://rms.maccio-ch.homelinux.net/nexus/content/groups/mm-m2-public/"
         }
     }
 }
@@ -57,11 +57,11 @@ apply plugin: 'maven'
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository ( url: "http://repo.maccio-ch.homelinux.net/nexus/content/repositories/releases/") {
+            repository ( url: "http://rms.maccio-ch.homelinux.net/nexus/content/repositories/mm-m2-releases/") {
                 authentication (userName: repoUploadUser,
                                 password: repoUploadPassword)
             }
-            snapshotRepository ( url: "http://repo.maccio-ch.homelinux.net/nexus/content/repositories/snapshots/") {
+            snapshotRepository ( url: "http://rms.maccio-ch.homelinux.net/nexus/content/repositories/mm-m2-snapshots/") {
                 authentication (userName: repoUploadUser,
                                 password: repoUploadPassword)
             }

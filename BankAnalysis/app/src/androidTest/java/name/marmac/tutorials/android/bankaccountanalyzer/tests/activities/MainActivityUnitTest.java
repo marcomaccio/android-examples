@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import name.marmac.tutorials.android.bankaccountanalyzer.activities.BankManagerMainActivity;
-import name.marmac.tutorials.android.contentproviders.bankanalysis.R;
+import name.marmac.tutorials.android.bankaccountanalyzer.R;
 
 /**
  * Created by marcomaccio on 19/07/2015.
