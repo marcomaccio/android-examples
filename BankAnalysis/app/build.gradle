@@ -47,7 +47,7 @@ uploadArchives {
                 artifactId  = "BankAnalyser-app"
                 version     = projectVersion
                 packaging   = "apk"
-                name        = "BANK-ANALYSER :: APP"
+                name        = "BA :: BANK ANLYZER MOBILE - Android App"
             }
         }
     }
