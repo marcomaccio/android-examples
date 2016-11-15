@@ -7,17 +7,15 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.android.tools.build:gradle:2.2.2'
         classpath "org.sonarqube.gradle:gradle-sonarqube-plugin:1.0"
     }
 
 
 }
-
 plugins {
     id "org.sonarqube" version "1.0"
 }
-
 allprojects {
     repositories {
         maven {
@@ -25,8 +23,6 @@ allprojects {
         }
     }
 }
-
-
 sonarqube {
     properties {
         property "sonar.host.url", "http://qms.maccio-ch.homelinux.net/sonarqube"
@@ -42,7 +38,6 @@ sonarqube {
         property "sonar.android.lint.report", "build/outputs/lint-results.xml"
     }
 }
-
 subprojects {
     sonarqube {
         properties {
@@ -51,34 +46,32 @@ subprojects {
         }
     }
 }
-
 apply plugin: 'maven'
-
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository ( url: "http://rms.maccio-ch.homelinux.net/nexus/content/repositories/mm-m2-releases/") {
-                authentication (userName: repoUploadUser,
-                                password: repoUploadPassword)
+            repository(url: "http://rms.maccio-ch.homelinux.net/nexus/content/repositories/mm-m2-releases/") {
+                authentication(userName: repoUploadUser,
+                        password: repoUploadPassword)
             }
-            snapshotRepository ( url: "http://rms.maccio-ch.homelinux.net/nexus/content/repositories/mm-m2-snapshots/") {
-                authentication (userName: repoUploadUser,
-                                password: repoUploadPassword)
+            snapshotRepository(url: "http://rms.maccio-ch.homelinux.net/nexus/content/repositories/mm-m2-snapshots/") {
+                authentication(userName: repoUploadUser,
+                        password: repoUploadPassword)
             }
 
             pom.project {
 
-                groupId     = "name.marmac.tutorials.android.BankAnalyser"
-                artifactId  = "BankAnalyser"
-                version     = projectVersion
-                packaging   = "pom"
-                name        = "BANK-ANALYSER"
+                groupId = "name.marmac.tutorials.android.BankAnalyser"
+                artifactId = "BankAnalyser"
+                version = projectVersion
+                packaging = "pom"
+                name = "BANK-ANALYSER"
 
                 developers {
                     developer {
-                        id      'marco.maccio@marmac.name'
-                        name    'Marco Maccio'
-                        email   'marco.maccio@marmac.name'
+                        id 'marco.maccio@marmac.name'
+                        name 'Marco Maccio'
+                        email 'marco.maccio@marmac.name'
                         roles {
                             role 'Architect'
                             role 'Developer'
@@ -99,3 +92,5 @@ uploadArchives {
         }
     }
 }
+
+apply plugin: 'idea'
